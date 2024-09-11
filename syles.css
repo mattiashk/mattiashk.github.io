@@ -721,13 +721,14 @@ nav a, nav button {
 }
 .background{
     height: 700px;
+    background-size: contain;
+    background-attachment: fixed;
+    background-image: url('./images/grouppic.png');
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    background-size: contain;
-    background-attachment: fixed;
 }
 .call_to_action{
     padding-top: 10px;
