@@ -723,7 +723,7 @@ nav a, nav button {
     height: 700px;
     background-size: contain;
     background-attachment: fixed;
-    background-image: url('./images/grouppic.png');
+    background-image: url('./images/group.pdf');
     display: flex;
     align-items: center;
     justify-content: center;
