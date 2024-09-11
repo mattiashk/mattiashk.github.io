@@ -1,1 +1,217 @@
-<!-- hello world-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grow your cyber resilience with Jones DesLauriers. Learn about cybersecurity, liability, and claims with expert insights and resources."></meta>
+    <title>Posture Plus</title>
+    <link rel="stylesheet" href="./syles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/digitalarmourlogo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+            <img src="{{ url_for('static', filename='images/JDlogo.webp')}}" alt="JonesDeslauriers & Navacord joint Logo" width="250" height="150">
+            </a>
+        </div>
+        <nav>
+            <span class="menu-icon" onclick="toggleResponsiveNav()">&#9776;</span>
+            <div class="responsive-nav" id="responsiveNav">
+                <a href="/info" class="nav_bar_text_main">Why Everyone Needs Protection</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('dropdown2', this)">Resources <span class="caret">&#9660;</span></button>
+                    <div class="dropdown-content" id="dropdown2">
+                        <a href="/vendors" class="nav_bar_text">Vendors</a>
+                        <a href="/about-us" class="nav_bar_text">About us</a>
+                        <a href="/contact" class="nav_bar_text">Contact Us</a>
+                    </div>
+                </div>
+                <a href="/coverage" class="button_under" style="font-family: 'Montserrat', sans-serif; font-weight: bold; width: auto; height: auto;">Get Coverage</a>
+            </div>
+        </nav>
+        <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    </header>
+    <div>
+        <div class="background" style="background: url('{{ url_for('static', filename='images/home_background.webp')}}');">
+            <div class="content_home_image">
+                <div class="container">
+                    <h1>Grow Your Cyber Resilience<br>With Jones DesLauriers</h1>
+                    <p class="sub-title">Posture+ Specialty Cyber Insurance Broker</p>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <div class="logo-slider">
+        <div class="logo_slide">
+          <img src="{{ url_for('static', filename='images/slide/1.png') }}" alt="Logo 1">
+          <img src="{{ url_for('static', filename='images/slide/2.png') }}" alt="Logo 2">
+          <img src="{{ url_for('static', filename='images/slide/3.png') }}" alt="Logo 3">
+          <img src="{{ url_for('static', filename='images/slide/4.png') }}" alt="Logo 4">
+          <img src="{{ url_for('static', filename='images/slide/5.png') }}" alt="Logo 5">
+          <img src="{{ url_for('static', filename='images/slide/6.png') }}" alt="Logo 6">
+          <img src="{{ url_for('static', filename='images/slide/7.png') }}" alt="Logo 7">
+          <img src="{{ url_for('static', filename='images/slide/8.png') }}" alt="Logo 8">
+          <img src="{{ url_for('static', filename='images/slide/9.png') }}" alt="Logo 9">
+          <img src="{{ url_for('static', filename='images/slide/10.png') }}" alt="Logo 10">
+          <img src="{{ url_for('static', filename='images/slide/11.png') }}" alt="Logo 11">
+          <img src="{{ url_for('static', filename='images/slide/12.png') }}" alt="Logo 12">
+          <img src="{{ url_for('static', filename='images/slide/13.png') }}" alt="Logo 13">
+          <img src="{{ url_for('static', filename='images/slide/14.png') }}" alt="Logo 14">
+          <img src="{{ url_for('static', filename='images/slide/15.png') }}" alt="Logo 15">
+          <img src="{{ url_for('static', filename='images/slide/16.png') }}" alt="Logo 16">
+          <img src="{{ url_for('static', filename='images/slide/17.png') }}" alt="Logo 17">
+        </div>
+      </div>
+      
+    <div class="container">
+        <div class="section-content">
+            <div class="right">
+                <img src="{{ url_for('static', filename='images/cyber_resilience.webp')}}" alt="cyber resilience infographic" class="home_image">
+            </div>
+            <div class="left">
+                <h2 class="content-title" style="margin-top: 0">Our Goal</h2>
+                <div class="content">
+                    <div class="content-description">Our primary objective is to educate, protect, and insure our valued clients. Through our information resources, we will teach you anything 
+                        you might want to know about cybersecurity, liability, and claims. Our team of cybersecurity experts will identify the cyber risk of your business and provide solutions to potential issues. 
+                        Our panel of trusted services and security providers can help you implement changes to your business, keeping you on the cutting-edge.
+                    </div>
+                    <div class="content-description">
+                        By utilizing these resources, you will gain valuable knowledge, bolster your cyber protection, and reduce costs incurred on cyber insurance policies.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <aside class="aside">
+                <p class="aside-title">
+                    The Canadian Cyber Incident Response Centre (CCIRC) estimated the total losses due to cybercrime in Canada to be
+                    over $3 billion in 2023 alone.
+                </p>
+            </aside>
+            <h2 class="content-title">Insurability Benefits</h2>
+            <p class="content-subheader">How you can save by implementing quality cybersecurity solutions</p>
+            <p class="content-description">
+                <strong>Current market:</strong>
+                Cyber insurance has been in a hard market for a number of years thanks to increased digitization in lieu of the
+                pandemic and the evolution of the cyber threat landscape. The evolution and spike of ransomware attacks has caused
+                prices to skyrocket due to a massive amount of claims being reported. The market has finally begun to settle, now is the right time to buy. 
+                <br><br>
+                <strong>In the long run:</strong>
+                Quality cyber insurance coverage and resilience provide critical financial protection by covering costs associated with data breaches, such as notification, 
+                legal fees, and potential fines, as well as compensating for business interruptions due to cyber incidents. This coverage ensures access to cybersecurity experts
+                 for effective incident response and recovery, and it encourages the implementation of robust cybersecurity measures. In the long run, such insurance helps maintain 
+                 customer trust and protect the company’s reputation by ensuring swift and professional handling of breaches. Additionally, it aids in meeting legal and regulatory 
+                 requirements, ultimately supporting sustained business stability and growth.
+                <br><br>
+                <strong>Lower Costs:</strong>
+                Implementing strong security measures not only safeguards your organization's digital assets but also enhances its
+                cyber insurability. By investing in robust cybersecurity practices such as multi-factor authentication, encryption,
+                regular security assessments, and employee training, you mitigate the risk of cyber threats and demonstrate a
+                commitment to protecting sensitive information. Insurers view organizations with strong security postures as lower-risk
+                entities, resulting in potentially lower insurance premiums and more favorable terms.
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <hr class="horizontal-line" style="background: #00314f"></hr>
+    <footer class="footer">
+        <div class="footer-items">
+            <div class="footer-item">
+                <strong>CONTACT US!</strong><br>
+                <hr class="horizontal">
+                <a href="mailto:postureplus@jdimi.com" style='color: white;'>postureplus@jdimi.com</a><br>
+                <a>PHONE: 416.865.9059</a><br><br>
+                <a href="/contact" class="contact_button">Contact Us</a>
+            </div>
+            <div class="footer-item">
+                <strong>MISSISSAUGA</strong><br>
+                <hr class="horizontal">
+                2375 Skymark Avenue<br>
+                Mississauga, ON L4W 4Y6<br>
+                PHONE: 416.259.4625<br>
+                FAX: 416.259.7178<br>
+                TF: 1.877.232.9996
+            </div>
+            <div class="footer-item">
+                <strong>TORONTO – HULL DIVISION</strong><br>
+                <hr class="horizontal">
+                77 King Street West, TD North Tower Suite 4110 P.O. Box 262<br>
+                Toronto Ontario M5K 1J5<br>
+                PHONE: 416.865.0131
+            </div>
+            <div class="footer-item">
+                <strong>QUEBEC</strong><br>
+                <hr class="horizontal">
+                3030 boul. Le Carrefour, Ste. 803<br>
+                Laval, QC H7T 2P5<br>
+                PHONE: 514.447.8951<br>
+                FAX: 416.259.7178<br>
+                TF: 888.365.3617
+            </div>
+            <div class="footer-item">
+                <strong>OAKVILLE</strong><br>
+                <hr class="horizontal">
+                217 Speers Road, Suite 15<br>
+                Oakville, Ontario, L6K 0J3<br>
+                PHONE: 416.238.2024
+            </div>
+            <div class="footer-item">
+                <strong>OTTAWA – RISK BALANCE</strong><br>
+                <hr class="horizontal">
+                307C Richmond Rd Unit 200<br>
+                Ottawa ON K1Z 6X3<br>
+                PHONE: 613.225.3515
+            </div>
+            <div class="footer-item">
+                <strong>OTTAWA - BINKS</strong><br>
+                <hr class="horizontal">
+                881 Lady Ellen Pl<br>
+                Ottawa, ON K1Z 5L3<br>
+                PHONE: 613.226.1350
+            </div>
+            <div class="footer-item">
+                <strong>COLLINGWOOD</strong><br>
+                <hr class="horizontal">
+                One First ST., Unit 220<br>
+                Collingwood, ON L9Y 1A1<br>
+                PHONE: 705.444.0065<br>
+                FAX: 705.446.1144
+            </div>
+            <div class="footer-item">
+                <strong>TORONTO - IBERIA</strong><br>
+                <hr class="horizontal">
+                1278 St. Clair Ave., W., Unit #6<br>
+                Toronto, ON M6E 1B9<br>
+                PHONE: 416.532.5580<br>
+                FAX: 416.532.8510
+            </div>
+            <div class="footer-item">
+                <strong>TORONTO - LUSO</strong><br>
+                <hr class="horizontal">
+                1152 College Street<br>
+                Toronto, ON M6H 1B6<br>
+                PHONE: 416.534.8455<br>
+                FAX: 416.534.8434
+            </div>
+            <div class="footer-item">
+                <strong>PORT HOPE</strong><br>
+                <hr class="horizontal">
+                151B Rose Glen Rd. North<br>
+                Port Hope, ON L1A 3V6<br>
+                PHONE: 613.689.1250<br>
+                FAX: 905.885.7131
+            </div>
+            <img src="{{ url_for('static', filename='images/JDlogo2.webp')}}" alt="JonesDeslauriers footer logo, no tagline" class="center-image">
+        </div>
+    </footer>
+</body>
+</html>
+<script src="{{ url_for('static', filename='js/aside_home.js') }}"></script>
